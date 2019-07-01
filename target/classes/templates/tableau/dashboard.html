@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:data="http://www.thymeleaf.org/extras/data-attribute"
+	layout:decorate="~{layout/layout-padrao}"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+<link rel="stylesheet" type="text/css"
+	th:href="@{/stylesheets/pesquisa-vinhos.css}" />
+</head>
+<body>
+
+	<section layout:fragment="conteudo">
+
+		<div class="page-header">
+			<div class="container-fluid">
+				<h1>DashBoard</h1>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<iframe src="https://servidor.goldentechnologia.com.br/views/DREVisual-Golden/DRE?:showVizHome=no&:embed=true"  width="100%" height="1150px"></iframe>
+		</div>
+
+
+	</section>
+
+	<th:block layout:fragment="javascrip-extra">
+		<script th:src="@{/javascripts/excluir-vinho-modal.js}"></script>
+	</th:block>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
